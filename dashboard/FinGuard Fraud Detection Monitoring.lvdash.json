@@ -1,0 +1,1035 @@
+{
+  "datasets": [
+    {
+      "name": "high_risk_customers",
+      "displayName": "High Risk Customers Count",
+      "queryLines": [
+        "SELECT\n",
+        "  COUNT(*) as high_risk_count\n",
+        "FROM\n",
+        "  finguard.silver.customers\n",
+        "WHERE\n",
+        "  risk_score > 70"
+      ]
+    },
+    {
+      "name": "total_transactions_today",
+      "displayName": "Total Transactions Today",
+      "queryLines": [
+        "SELECT\n",
+        "  COUNT(*) as transaction_count\n",
+        "FROM\n",
+        "  finguard.silver.transactions\n",
+        "WHERE\n",
+        "  DATE(transaction_timestamp) = CURRENT_DATE()"
+      ]
+    },
+    {
+      "name": "avg_transaction_amount",
+      "displayName": "Average Transaction Amount",
+      "queryLines": [
+        "SELECT\n",
+        "  AVG(amount) as avg_amount\n",
+        "FROM\n",
+        "  finguard.silver.transactions\n",
+        "WHERE\n",
+        "  DATE(transaction_timestamp) = CURRENT_DATE()"
+      ]
+    },
+    {
+      "name": "total_alerts_today",
+      "displayName": "Total Alerts Today",
+      "queryLines": [
+        "SELECT\n",
+        "  COUNT(*) as alert_count\n",
+        "FROM\n",
+        "  (\n",
+        "    SELECT\n",
+        "      alert_id,\n",
+        "      alert_timestamp\n",
+        "    FROM\n",
+        "      finguard.gold.fraud_card_alert\n",
+        "    WHERE\n",
+        "      DATE(alert_timestamp) = CURRENT_DATE()\n",
+        "    UNION ALL\n",
+        "    SELECT\n",
+        "      alert_id,\n",
+        "      alert_timestamp\n",
+        "    FROM\n",
+        "      finguard.gold.high_value_transactions_alert\n",
+        "    WHERE\n",
+        "      DATE(alert_timestamp) = CURRENT_DATE()\n",
+        "  )"
+      ]
+    },
+    {
+      "name": "alert_status_distribution",
+      "displayName": "Alert Status Distribution",
+      "queryLines": [
+        "SELECT\n",
+        "  status,\n",
+        "  COUNT(*) as alert_count\n",
+        "FROM\n",
+        "  (\n",
+        "    SELECT\n",
+        "      transaction_status as status\n",
+        "    FROM\n",
+        "      finguard.gold.fraud_card_alert\n",
+        "    WHERE\n",
+        "      alert_timestamp >= CURRENT_TIMESTAMP() - INTERVAL 7 DAYS\n",
+        "    UNION ALL\n",
+        "    SELECT\n",
+        "      status\n",
+        "    FROM\n",
+        "      finguard.gold.high_value_transactions_alert\n",
+        "    WHERE\n",
+        "      alert_timestamp >= CURRENT_TIMESTAMP() - INTERVAL 7 DAYS\n",
+        "  )\n",
+        "GROUP BY\n",
+        "  status"
+      ]
+    },
+    {
+      "name": "top_customers_by_alerts",
+      "displayName": "Top Customers by Alert Count",
+      "queryLines": [
+        "SELECT\n",
+        "  customer_name,\n",
+        "  COUNT(*) as alert_count\n",
+        "FROM\n",
+        "  (\n",
+        "    SELECT\n",
+        "      customer_name\n",
+        "    FROM\n",
+        "      finguard.gold.fraud_card_alert\n",
+        "    WHERE\n",
+        "      alert_timestamp >= CURRENT_TIMESTAMP() - INTERVAL 7 DAYS\n",
+        "    UNION ALL\n",
+        "    SELECT\n",
+        "      customer_name\n",
+        "    FROM\n",
+        "      finguard.gold.high_value_transactions_alert\n",
+        "    WHERE\n",
+        "      alert_timestamp >= CURRENT_TIMESTAMP() - INTERVAL 7 DAYS\n",
+        "  )\n",
+        "GROUP BY\n",
+        "  customer_name\n",
+        "ORDER BY\n",
+        "  alert_count DESC\n",
+        "LIMIT 10"
+      ]
+    },
+    {
+      "name": "alert_trends",
+      "displayName": "Alert Trends Over Time",
+      "queryLines": [
+        "SELECT\n",
+        "  DATE_TRUNC('hour', alert_timestamp) as alert_hour,\n",
+        "  COUNT(*) as alert_count\n",
+        "FROM\n",
+        "  (\n",
+        "    SELECT\n",
+        "      alert_timestamp\n",
+        "    FROM\n",
+        "      finguard.gold.fraud_card_alert\n",
+        "    WHERE\n",
+        "      alert_timestamp >= CURRENT_TIMESTAMP() - INTERVAL 24 HOURS\n",
+        "    UNION ALL\n",
+        "    SELECT\n",
+        "      alert_timestamp\n",
+        "    FROM\n",
+        "      finguard.gold.high_value_transactions_alert\n",
+        "    WHERE\n",
+        "      alert_timestamp >= CURRENT_TIMESTAMP() - INTERVAL 24 HOURS\n",
+        "  )\n",
+        "GROUP BY\n",
+        "  DATE_TRUNC('hour', alert_timestamp)\n",
+        "ORDER BY\n",
+        "  alert_hour"
+      ]
+    },
+    {
+      "name": "alert_type_breakdown",
+      "displayName": "Alert Type Breakdown",
+      "queryLines": [
+        "SELECT\n",
+        "  alert_type,\n",
+        "  COUNT(*) as alert_count\n",
+        "FROM\n",
+        "  (\n",
+        "    SELECT\n",
+        "      alert_type\n",
+        "    FROM\n",
+        "      finguard.gold.fraud_card_alert\n",
+        "    WHERE\n",
+        "      alert_timestamp >= CURRENT_TIMESTAMP() - INTERVAL 24 HOURS\n",
+        "    UNION ALL\n",
+        "    SELECT\n",
+        "      alert_type\n",
+        "    FROM\n",
+        "      finguard.gold.high_value_transactions_alert\n",
+        "    WHERE\n",
+        "      alert_timestamp >= CURRENT_TIMESTAMP() - INTERVAL 24 HOURS\n",
+        "  )\n",
+        "GROUP BY\n",
+        "  alert_type"
+      ]
+    },
+    {
+      "name": "transaction_volume_by_minute",
+      "displayName": "Transaction Volume by Minute",
+      "queryLines": [
+        "SELECT\n",
+        "  DATE_TRUNC('minute', transaction_timestamp) as transaction_minute,\n",
+        "  COUNT(*) as transaction_count\n",
+        "FROM\n",
+        "  finguard.silver.transactions\n",
+        "WHERE\n",
+        "  transaction_timestamp >= CURRENT_TIMESTAMP() - INTERVAL 24 HOURS\n",
+        "GROUP BY\n",
+        "  DATE_TRUNC('minute', transaction_timestamp)\n",
+        "ORDER BY\n",
+        "  transaction_minute"
+      ]
+    },
+    {
+      "name": "intl_vs_domestic",
+      "displayName": "International vs Domestic Transactions",
+      "queryLines": [
+        "SELECT\n",
+        "  CASE\n",
+        "    WHEN is_international = true THEN 'International'\n",
+        "    ELSE 'Domestic'\n",
+        "  END as transaction_type,\n",
+        "  COUNT(*) as transaction_count\n",
+        "FROM\n",
+        "  finguard.silver.transactions\n",
+        "WHERE\n",
+        "  transaction_timestamp >= CURRENT_TIMESTAMP() - INTERVAL 7 DAYS\n",
+        "GROUP BY\n",
+        "  is_international"
+      ]
+    },
+    {
+      "name": "top_merchants",
+      "displayName": "Top Merchants by Transaction Count",
+      "queryLines": [
+        "SELECT\n",
+        "  merchant_name,\n",
+        "  COUNT(*) as transaction_count\n",
+        "FROM\n",
+        "  finguard.silver.transactions\n",
+        "WHERE\n",
+        "  transaction_timestamp >= CURRENT_TIMESTAMP() - INTERVAL 7 DAYS\n",
+        "GROUP BY\n",
+        "  merchant_name\n",
+        "ORDER BY\n",
+        "  transaction_count DESC\n",
+        "LIMIT 10"
+      ]
+    },
+    {
+      "name": "transaction_by_merchant_category",
+      "displayName": "Transaction Amount by Merchant Category",
+      "queryLines": [
+        "SELECT\n",
+        "  merchant_category,\n",
+        "  SUM(amount) as total_amount\n",
+        "FROM\n",
+        "  finguard.silver.transactions\n",
+        "WHERE\n",
+        "  transaction_timestamp >= CURRENT_TIMESTAMP() - INTERVAL 7 DAYS\n",
+        "GROUP BY\n",
+        "  merchant_category\n",
+        "ORDER BY\n",
+        "  total_amount DESC"
+      ]
+    },
+    {
+      "name": "payment_channel_distribution",
+      "displayName": "Payment Channel Distribution",
+      "queryLines": [
+        "SELECT\n",
+        "  payment_channel,\n",
+        "  COUNT(*) as transaction_count\n",
+        "FROM\n",
+        "  finguard.silver.transactions\n",
+        "WHERE\n",
+        "  transaction_timestamp >= CURRENT_TIMESTAMP() - INTERVAL 7 DAYS\n",
+        "GROUP BY\n",
+        "  payment_channel\n",
+        "ORDER BY\n",
+        "  transaction_count DESC"
+      ]
+    },
+    {
+      "name": "transactions_by_country",
+      "displayName": "Transaction Heatmap by Country",
+      "queryLines": [
+        "SELECT\n",
+        "  country,\n",
+        "  COUNT(*) as transaction_count,\n",
+        "  SUM(amount) as total_amount\n",
+        "FROM\n",
+        "  finguard.silver.transactions\n",
+        "WHERE\n",
+        "  transaction_timestamp >= CURRENT_TIMESTAMP() - INTERVAL 7 DAYS\n",
+        "GROUP BY\n",
+        "  country\n",
+        "ORDER BY\n",
+        "  transaction_count DESC"
+      ]
+    },
+    {
+      "name": "risk_level_distribution",
+      "displayName": "Risk Level Distribution from Watchlist",
+      "queryLines": [
+        "SELECT\n",
+        "  risk_level,\n",
+        "  COUNT(*) as count\n",
+        "FROM\n",
+        "  finguard.silver.fraud_watchlist\n",
+        "WHERE\n",
+        "  status = 'active'\n",
+        "GROUP BY\n",
+        "  risk_level\n",
+        "ORDER BY\n",
+        "  risk_level"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "name": "47d564f0",
+      "displayName": "Fraud Monitoring",
+      "layout": [
+        {
+          "widget": {
+            "name": "total_alerts_counter",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "total_alerts_today",
+                  "fields": [
+                    {
+                      "name": "sum(alert_count)",
+                      "expression": "SUM(`alert_count`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Total Alerts Today",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(alert_count)"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 3,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "total_transactions_counter",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "total_transactions_today",
+                  "fields": [
+                    {
+                      "name": "sum(transaction_count)",
+                      "expression": "SUM(`transaction_count`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Total Transactions Today",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(transaction_count)"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 3,
+            "y": 0,
+            "width": 3,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "avg_amount_counter",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "avg_transaction_amount",
+                  "fields": [
+                    {
+                      "name": "avg(avg_amount)",
+                      "expression": "AVG(`avg_amount`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Avg Transaction Amount",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(avg_amount)"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 0,
+            "width": 3,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "high_risk_counter",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "high_risk_customers",
+                  "fields": [
+                    {
+                      "name": "sum(high_risk_count)",
+                      "expression": "SUM(`high_risk_count`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "High Risk Customers",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(high_risk_count)"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 9,
+            "y": 0,
+            "width": 3,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "alert_trends_line",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "alert_trends",
+                  "fields": [
+                    {
+                      "name": "alert_hour",
+                      "expression": "`alert_hour`"
+                    },
+                    {
+                      "name": "alert_count",
+                      "expression": "`alert_count`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Alert Trends Over Time",
+                "showTitle": true
+              },
+              "widgetType": "line",
+              "encodings": {
+                "x": {
+                  "fieldName": "alert_hour",
+                  "scale": {
+                    "type": "temporal"
+                  }
+                },
+                "y": {
+                  "fieldName": "alert_count",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 4,
+            "width": 6,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "top_customers_bar",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "top_customers_by_alerts",
+                  "fields": [
+                    {
+                      "name": "alert_count",
+                      "expression": "`alert_count`"
+                    },
+                    {
+                      "name": "customer_name",
+                      "expression": "`customer_name`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Top 10 Customers by Alert Count",
+                "showTitle": true
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "alert_count",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "customer_name",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 12,
+            "width": 6,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "alert_type_pie_v2",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "alert_type_breakdown",
+                  "fields": [
+                    {
+                      "name": "alert_count",
+                      "expression": "`alert_count`"
+                    },
+                    {
+                      "name": "alert_type",
+                      "expression": "`alert_type`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Alert Type Breakdown",
+                "showTitle": true
+              },
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "alert_count",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "alert_type",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 4,
+            "width": 6,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "alert_status_pie_v2",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "alert_status_distribution",
+                  "fields": [
+                    {
+                      "name": "alert_count",
+                      "expression": "`alert_count`"
+                    },
+                    {
+                      "name": "status",
+                      "expression": "`status`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Alert Status Distribution",
+                "showTitle": true
+              },
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "alert_count",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "status",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 12,
+            "width": 6,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "transaction_volume_line",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "transaction_volume_by_minute",
+                  "fields": [
+                    {
+                      "name": "transaction_minute",
+                      "expression": "`transaction_minute`"
+                    },
+                    {
+                      "name": "transaction_count",
+                      "expression": "`transaction_count`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Transaction Volume by Minute",
+                "showTitle": true
+              },
+              "widgetType": "line",
+              "encodings": {
+                "x": {
+                  "fieldName": "transaction_minute",
+                  "scale": {
+                    "type": "temporal"
+                  }
+                },
+                "y": {
+                  "fieldName": "transaction_count",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 20,
+            "width": 6,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "merchant_category_bar",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "transaction_by_merchant_category",
+                  "fields": [
+                    {
+                      "name": "total_amount",
+                      "expression": "`total_amount`"
+                    },
+                    {
+                      "name": "merchant_category",
+                      "expression": "`merchant_category`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Transaction Amount by Merchant Category",
+                "showTitle": true
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "total_amount",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "merchant_category",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 20,
+            "width": 6,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "intl_vs_domestic_pie",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "intl_vs_domestic",
+                  "fields": [
+                    {
+                      "name": "transaction_count",
+                      "expression": "`transaction_count`"
+                    },
+                    {
+                      "name": "transaction_type",
+                      "expression": "`transaction_type`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "International vs Domestic Transactions",
+                "showTitle": true
+              },
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "transaction_count",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "transaction_type",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 28,
+            "width": 6,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "top_merchants_bar",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "top_merchants",
+                  "fields": [
+                    {
+                      "name": "transaction_count",
+                      "expression": "`transaction_count`"
+                    },
+                    {
+                      "name": "merchant_name",
+                      "expression": "`merchant_name`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Top 10 Merchants by Transaction Count",
+                "showTitle": true
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "transaction_count",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "merchant_name",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 28,
+            "width": 6,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "country_heatmap",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "transactions_by_country",
+                  "fields": [
+                    {
+                      "name": "transaction_count",
+                      "expression": "`transaction_count`"
+                    },
+                    {
+                      "name": "country",
+                      "expression": "`country`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Transaction Heatmap by Country",
+                "showTitle": true
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "transaction_count",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "country",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 36,
+            "width": 12,
+            "height": 8
+          }
+        },
+        {
+          "widget": {
+            "name": "payment_channel_pie",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "payment_channel_distribution",
+                  "fields": [
+                    {
+                      "name": "transaction_count",
+                      "expression": "`transaction_count`"
+                    },
+                    {
+                      "name": "payment_channel",
+                      "expression": "`payment_channel`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Payment Channel Distribution",
+                "showTitle": true
+              },
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "transaction_count",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "payment_channel",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 44,
+            "width": 12,
+            "height": 8
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    },
+    "applyModeEnabled": false
+  }
+}

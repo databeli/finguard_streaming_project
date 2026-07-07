@@ -1,0 +1,342 @@
+watchlist_id,watch_type,entity_id,risk_level,action,reason_code,reason_description,status,effective_from,reported_by,reported_source,country,city
+wl000001,CARD,5008514036965665,high,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 09:00:00,SOC,Manual,India,Hyderabad
+wl000002,CARD,4413337312552355,high,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 09:01:00,SOC,External Feed,India,Pune
+wl000003,CARD,5329839542961842,low,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 09:02:00,AML Team,External Feed,India,Delhi
+wl000004,CARD,4717327980595032,high,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 09:04:00,AML Team,External Feed,India,Chennai
+wl000005,CARD,4260650191792026,critical,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 09:07:00,Customer Care,CRM,India,Bengaluru
+wl000006,CARD,4009109391119268,high,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 09:12:00,SOC,Manual,India,Mumbai
+wl000007,CARD,5953506373118040,medium,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 09:28:00,AML Team,AML,India,Chennai
+wl000008,CARD,4519832731585146,critical,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 09:31:00,AML Team,External Feed,India,Bengaluru
+wl000009,CARD,4910622723626693,high,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 09:32:00,AML Team,Manual,India,Chennai
+wl000010,CARD,5229812099576576,high,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 09:33:00,Customer Care,External Feed,India,Mumbai
+wl000011,CARD,5310720113798442,high,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 09:35:00,SOC,AML,India,Bengaluru
+wl000012,CARD,5456232858842477,high,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 09:37:00,Fraud Team,CRM,India,Mumbai
+wl000013,CARD,5791776334272032,medium,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 09:41:00,Customer Care,External Feed,India,Mumbai
+wl000014,CARD,5863144170646255,high,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 09:43:00,Fraud Team,External Feed,India,Pune
+wl000015,CARD,5729293143866328,high,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 09:49:00,SOC,AML,India,Delhi
+wl000016,CARD,4552457871584155,high,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 09:53:00,SOC,Manual,India,Mumbai
+wl000017,CARD,4645257775478124,critical,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 09:55:00,Fraud Team,CRM,India,Chennai
+wl000018,CARD,5487632909279140,medium,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 09:56:00,AML Team,Manual,India,Delhi
+wl000019,CARD,5004010414596428,high,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 09:58:00,Customer Care,CRM,India,Delhi
+wl000020,CARD,5999404389836409,medium,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 09:59:00,SOC,AML,India,Mumbai
+wl000021,CARD,5806533315377954,critical,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 10:02:00,AML Team,External Feed,India,Pune
+wl000022,CARD,4391065180170461,high,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 10:03:00,AML Team,AML,India,Delhi
+wl000023,CARD,4269312163761826,high,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 10:04:00,Customer Care,CRM,India,Pune
+wl000024,CARD,5953766014448563,medium,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 10:05:00,AML Team,External Feed,India,Bengaluru
+wl000025,CARD,4254257306624818,medium,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 10:06:00,AML Team,External Feed,India,Mumbai
+wl000026,CARD,5047264261212036,critical,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 10:07:00,SOC,AML,India,Mumbai
+wl000027,CARD,5940539103717053,medium,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 10:12:00,AML Team,AML,India,Pune
+wl000028,CARD,4856728727601539,high,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 10:21:00,SOC,CRM,India,Delhi
+wl000029,CARD,5443270185106798,medium,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 10:24:00,AML Team,External Feed,India,Chennai
+wl000030,CARD,4659152017774904,high,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 10:27:00,Fraud Team,Manual,India,Hyderabad
+wl000031,CARD,5095493059660186,medium,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 10:30:00,AML Team,Manual,India,Bengaluru
+wl000032,CARD,5696325953278771,medium,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 10:34:00,SOC,CRM,India,Chennai
+wl000033,CARD,4138759271256639,critical,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 10:36:00,SOC,Manual,India,Mumbai
+wl000034,CARD,5311091939284565,critical,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 10:40:00,Customer Care,Manual,India,Pune
+wl000035,CARD,4355610399529709,medium,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 10:48:00,Fraud Team,CRM,India,Pune
+wl000036,CARD,5570836821444885,high,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 10:51:00,SOC,Manual,India,Bengaluru
+wl000037,CARD,5204618723460132,medium,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 10:53:00,AML Team,AML,India,Delhi
+wl000038,CARD,5524914168601347,medium,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 10:54:00,Customer Care,External Feed,India,Mumbai
+wl000039,CARD,5729293143866328,high,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 10:55:00,AML Team,Manual,India,Pune
+wl000040,CARD,4627136111554268,high,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 10:59:00,Customer Care,CRM,India,Pune
+wl000041,CARD,5430391171822783,high,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 11:01:00,Customer Care,AML,India,Bengaluru
+wl000042,CARD,4845218230768105,medium,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 11:02:00,Customer Care,Manual,India,Delhi
+wl000043,CARD,5916202232883777,critical,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 11:03:00,Fraud Team,AML,India,Pune
+wl000044,CARD,4894346810548514,high,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 11:09:00,SOC,AML,India,Delhi
+wl000045,CARD,4562137213865898,medium,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 11:11:00,AML Team,External Feed,India,Hyderabad
+wl000046,CARD,5445189520284571,low,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 11:12:00,Fraud Team,CRM,India,Pune
+wl000047,CARD,5033445056658836,medium,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 11:13:00,Customer Care,AML,India,Hyderabad
+wl000048,CARD,4826068887189818,high,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 11:20:00,Customer Care,Manual,India,Bengaluru
+wl000049,CARD,5459910229014760,high,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 11:21:00,Fraud Team,CRM,India,Hyderabad
+wl000050,CARD,4272405593429679,medium,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 11:25:00,Fraud Team,AML,India,Delhi
+wl000051,CARD,5618495931034137,low,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 11:27:00,Fraud Team,AML,India,Delhi
+wl000052,CARD,4900696801867740,high,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 11:29:00,Fraud Team,CRM,India,Delhi
+wl000053,CARD,5972154064176922,high,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 11:30:00,SOC,AML,India,Mumbai
+wl000054,CARD,5352904228421023,medium,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 11:41:00,Fraud Team,CRM,India,Chennai
+wl000055,CARD,5051553234159593,critical,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 11:44:00,Fraud Team,Manual,India,Delhi
+wl000056,CARD,4045069176799351,high,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 11:46:00,Fraud Team,Manual,India,Hyderabad
+wl000057,CARD,4054119986798070,medium,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 11:50:00,SOC,AML,India,Bengaluru
+wl000058,CARD,4926932657327598,critical,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 11:51:00,AML Team,CRM,India,Pune
+wl000059,CARD,5076502412095797,critical,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 11:54:00,Customer Care,AML,India,Hyderabad
+wl000060,CARD,4574817006661554,high,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 11:55:00,AML Team,CRM,India,Pune
+wl000061,CARD,4193592361337600,low,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 11:56:00,Fraud Team,External Feed,India,Mumbai
+wl000062,CARD,5947174648877192,high,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 12:01:00,Customer Care,External Feed,India,Delhi
+wl000063,CARD,4975147439742925,critical,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 12:03:00,Customer Care,CRM,India,Bengaluru
+wl000064,CARD,4990139837354036,high,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 12:08:00,SOC,Manual,India,Chennai
+wl000065,CARD,4009109391119268,medium,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 12:09:00,AML Team,CRM,India,Hyderabad
+wl000066,CARD,5407663493396508,critical,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 12:10:00,Fraud Team,Manual,India,Mumbai
+wl000067,CARD,5097921583503442,medium,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 12:11:00,Customer Care,AML,India,Hyderabad
+wl000068,CARD,5113989868180977,low,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 12:25:00,AML Team,External Feed,India,Hyderabad
+wl000069,CARD,4715534820128404,high,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 12:31:00,AML Team,CRM,India,Chennai
+wl000070,CARD,5010651333872621,high,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 12:35:00,Fraud Team,AML,India,Bengaluru
+wl000071,CARD,5133595616420590,low,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 12:36:00,AML Team,AML,India,Hyderabad
+wl000072,CARD,5951003076205456,critical,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 12:40:00,Customer Care,External Feed,India,Bengaluru
+wl000073,CARD,5104584743621307,critical,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 12:41:00,Customer Care,CRM,India,Bengaluru
+wl000074,CARD,5134074517133952,critical,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 12:45:00,SOC,AML,India,Pune
+wl000075,CARD,5339449530067761,high,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 12:50:00,Customer Care,Manual,India,Chennai
+wl000076,CARD,4422319646300407,high,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 12:53:00,AML Team,AML,India,Bengaluru
+wl000077,CARD,5117536170617131,critical,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 12:59:00,AML Team,External Feed,India,Delhi
+wl000078,CARD,5133595616420590,critical,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:01:00,Fraud Team,CRM,India,Mumbai
+wl000079,CARD,4606853615305158,critical,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:02:00,Customer Care,Manual,India,Mumbai
+wl000080,CARD,4847609441283330,low,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:08:00,Fraud Team,AML,India,Delhi
+wl000081,CARD,5067323182971684,medium,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:09:00,SOC,External Feed,India,Chennai
+wl000082,CARD,4468135926648695,critical,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:10:00,Fraud Team,Manual,India,Mumbai
+wl000083,CARD,5275208854749296,medium,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:11:00,SOC,CRM,India,Chennai
+wl000084,CARD,4569040983665522,critical,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:13:00,AML Team,CRM,India,Chennai
+wl000085,CARD,5110475412126781,high,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:15:00,Customer Care,CRM,India,Chennai
+wl000086,CARD,4106987205061492,medium,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:18:00,AML Team,External Feed,India,Mumbai
+wl000087,CARD,4280598262045050,critical,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:20:00,Customer Care,Manual,India,Pune
+wl000088,CARD,4204339718956908,medium,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:22:00,Customer Care,Manual,India,Bengaluru
+wl000089,CARD,5729949387430273,low,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:24:00,AML Team,Manual,India,Delhi
+wl000090,CARD,5806533315377954,high,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:33:00,Fraud Team,CRM,India,Mumbai
+wl000091,CARD,5758997571130550,high,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:36:00,AML Team,External Feed,India,Bengaluru
+wl000092,CARD,5275208854749296,low,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:37:00,Fraud Team,AML,India,Hyderabad
+wl000093,CARD,4464844941163182,low,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:44:00,Customer Care,CRM,India,Mumbai
+wl000094,CARD,5025743263039753,critical,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:47:00,AML Team,AML,India,Bengaluru
+wl000095,CARD,4003296334727277,high,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:48:00,AML Team,Manual,India,Mumbai
+wl000096,CARD,5229231067245309,high,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:50:00,Customer Care,Manual,India,Hyderabad
+wl000097,CARD,4905150267551253,medium,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:51:00,AML Team,External Feed,India,Bengaluru
+wl000098,CARD,5747226408572164,critical,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:54:00,AML Team,CRM,India,Mumbai
+wl000099,CARD,5181845184894762,low,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:55:00,AML Team,AML,India,Pune
+wl000100,CARD,5456804473149767,critical,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:58:00,Fraud Team,CRM,India,Hyderabad
+wl000101,CARD,5719855460158510,critical,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 13:59:00,SOC,Manual,India,Pune
+wl000102,CARD,4937346706562727,high,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:01:00,SOC,AML,India,Hyderabad
+wl000103,CARD,5861634212545089,critical,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:04:00,SOC,AML,India,Pune
+wl000104,CARD,5302321298338162,high,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:08:00,Fraud Team,CRM,India,Pune
+wl000105,CARD,4926249451475415,high,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:11:00,Fraud Team,External Feed,India,Chennai
+wl000106,CARD,4058721055247287,high,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:13:00,Fraud Team,AML,India,Chennai
+wl000107,CARD,4535748595325933,critical,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:19:00,Customer Care,CRM,India,Pune
+wl000108,CARD,4878444835488474,low,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:20:00,SOC,External Feed,India,Pune
+wl000109,CARD,5078263337389876,medium,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:24:00,Fraud Team,Manual,India,Delhi
+wl000110,CARD,4468135926648695,medium,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:26:00,Customer Care,Manual,India,Bengaluru
+wl000111,CARD,4614978403690030,high,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:28:00,Fraud Team,External Feed,India,Hyderabad
+wl000112,CARD,5250583334303115,high,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:30:00,AML Team,CRM,India,Bengaluru
+wl000113,CARD,4614978403690030,critical,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:31:00,Customer Care,CRM,India,Pune
+wl000114,CARD,4847609441283330,high,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:32:00,SOC,External Feed,India,Pune
+wl000115,CARD,5949708905836687,high,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:35:00,AML Team,CRM,India,Delhi
+wl000116,CARD,5111615280988519,high,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:40:00,SOC,External Feed,India,Bengaluru
+wl000117,CARD,4595749885582984,high,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:41:00,SOC,AML,India,Mumbai
+wl000118,CARD,4330591266201578,high,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:46:00,Customer Care,Manual,India,Delhi
+wl000119,CARD,4891775662056341,medium,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:47:00,AML Team,CRM,India,Chennai
+wl000120,CARD,4204956121377301,high,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:48:00,Customer Care,External Feed,India,Hyderabad
+wl000121,CARD,4707986617706734,critical,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:51:00,Customer Care,External Feed,India,Pune
+wl000122,CARD,4054119986798070,low,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:54:00,Fraud Team,External Feed,India,Mumbai
+wl000123,CARD,5951003076205456,high,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:56:00,AML Team,External Feed,India,Hyderabad
+wl000124,CARD,4801963045306936,medium,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:57:00,Fraud Team,Manual,India,Pune
+wl000125,CARD,5642364281319097,high,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:58:00,Fraud Team,AML,India,Pune
+wl000126,CARD,5701765636004126,medium,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 14:59:00,SOC,AML,India,Delhi
+wl000127,CARD,5627365271727227,medium,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 15:01:00,Fraud Team,AML,India,Bengaluru
+wl000128,CARD,5974014890250391,high,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 15:02:00,Customer Care,AML,India,Pune
+wl000129,CARD,4614933163735166,high,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 15:08:00,Customer Care,CRM,India,Chennai
+wl000130,CARD,4882603359101578,high,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 15:13:00,SOC,AML,India,Hyderabad
+wl000131,CARD,4558243017646442,high,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 15:18:00,AML Team,CRM,India,Delhi
+wl000132,CARD,4539354358644964,high,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 15:23:00,Customer Care,CRM,India,Chennai
+wl000133,CARD,4495528938911901,low,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 15:30:00,AML Team,Manual,India,Pune
+wl000134,CARD,4693792374740745,critical,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 15:31:00,Customer Care,AML,India,Bengaluru
+wl000135,CARD,4341678127782215,high,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 15:33:00,SOC,CRM,India,Delhi
+wl000136,CARD,4666641106541135,medium,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 15:39:00,Customer Care,AML,India,Hyderabad
+wl000137,CARD,4661963990767693,medium,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 15:42:00,SOC,External Feed,India,Hyderabad
+wl000138,CARD,4391114281785223,high,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 15:44:00,Fraud Team,CRM,India,Pune
+wl000139,CARD,5772459928161583,critical,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 15:48:00,Customer Care,AML,India,Hyderabad
+wl000140,CARD,4666641106541135,high,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 15:49:00,AML Team,External Feed,India,Hyderabad
+wl000141,CARD,4171467741862560,high,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 15:55:00,SOC,Manual,India,Hyderabad
+wl000142,CARD,4983342337209489,critical,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 15:56:00,SOC,External Feed,India,Delhi
+wl000143,CARD,5080850960858747,medium,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:00:00,SOC,Manual,India,Hyderabad
+wl000144,CARD,4998935449268310,low,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:03:00,Fraud Team,AML,India,Hyderabad
+wl000145,CARD,5648628720319547,critical,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:08:00,Fraud Team,CRM,India,Delhi
+wl000146,CARD,4832060385050646,low,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:09:00,SOC,External Feed,India,Mumbai
+wl000147,CARD,5116162028123710,low,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:10:00,Fraud Team,Manual,India,Delhi
+wl000148,CARD,5332470739201352,high,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:11:00,Fraud Team,External Feed,India,Chennai
+wl000149,CARD,4401659953006228,high,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:12:00,SOC,Manual,India,Hyderabad
+wl000150,CARD,5314986430098180,high,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:13:00,Fraud Team,Manual,India,Hyderabad
+wl000151,CARD,5627365271727227,critical,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:14:00,Customer Care,CRM,India,Chennai
+wl000152,CARD,4833258486899932,medium,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:15:00,AML Team,External Feed,India,Chennai
+wl000153,CARD,5562531355251051,low,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:21:00,Customer Care,Manual,India,Hyderabad
+wl000154,CARD,5650977539673795,medium,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:22:00,AML Team,AML,India,Bengaluru
+wl000155,CARD,5575692459375264,critical,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:23:00,AML Team,AML,India,Delhi
+wl000156,CARD,4679176651221507,high,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:26:00,SOC,CRM,India,Chennai
+wl000157,CARD,5083868889178790,critical,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:28:00,Fraud Team,Manual,India,Delhi
+wl000158,CARD,5974014890250391,critical,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:31:00,AML Team,AML,India,Pune
+wl000159,CARD,4204956121377301,high,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:32:00,AML Team,CRM,India,Chennai
+wl000160,CARD,4278681447394733,critical,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:33:00,Customer Care,Manual,India,Chennai
+wl000161,CARD,5570836821444885,critical,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:40:00,Fraud Team,External Feed,India,Chennai
+wl000162,CARD,4342643350271603,medium,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:43:00,AML Team,AML,India,Hyderabad
+wl000163,CARD,4805526965827106,high,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:44:00,Fraud Team,External Feed,India,Mumbai
+wl000164,CARD,5228403595442947,critical,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:46:00,AML Team,AML,India,Hyderabad
+wl000165,CARD,5945703943804037,high,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:47:00,Customer Care,External Feed,India,Hyderabad
+wl000166,CARD,5785758512686126,high,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:48:00,Fraud Team,CRM,India,Delhi
+wl000167,CARD,5857086209593513,medium,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 16:55:00,Fraud Team,Manual,India,Mumbai
+wl000168,CARD,5343836404120918,critical,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 17:00:00,SOC,External Feed,India,Hyderabad
+wl000169,CARD,5634108562884315,high,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 17:03:00,Customer Care,Manual,India,Chennai
+wl000170,CARD,4594284347955274,medium,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 17:04:00,AML Team,CRM,India,Delhi
+wl000171,CARD,4704686111457686,critical,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 17:14:00,Fraud Team,Manual,India,Pune
+wl000172,CARD,5565198253092511,critical,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 17:15:00,Fraud Team,External Feed,India,Chennai
+wl000173,CARD,5174811317653979,high,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 17:20:00,Fraud Team,CRM,India,Mumbai
+wl000174,CARD,5729949387430273,high,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 17:24:00,Customer Care,AML,India,Bengaluru
+wl000175,CARD,5329839542961842,low,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 17:27:00,Fraud Team,AML,India,Bengaluru
+wl000176,CARD,4627136111554268,high,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 17:29:00,Fraud Team,CRM,India,Delhi
+wl000177,CARD,5443270185106798,low,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 17:33:00,Customer Care,External Feed,India,Chennai
+wl000178,CARD,5658760366909677,high,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 17:34:00,AML Team,Manual,India,Delhi
+wl000179,CARD,4531106092098192,high,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 17:40:00,SOC,AML,India,Bengaluru
+wl000180,CARD,5906181205464758,critical,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 17:45:00,SOC,AML,India,Chennai
+wl000181,CARD,5857086209593513,medium,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 17:46:00,SOC,CRM,India,Pune
+wl000182,CARD,5990707550476814,critical,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 17:52:00,AML Team,CRM,India,Bengaluru
+wl000183,CARD,4846684550489269,high,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 17:54:00,SOC,External Feed,India,Bengaluru
+wl000184,CARD,4597246657293419,critical,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 17:57:00,AML Team,External Feed,India,Delhi
+wl000185,CARD,4375243106903315,high,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:01:00,Customer Care,AML,India,Pune
+wl000186,CARD,5497185948491024,high,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:09:00,AML Team,CRM,India,Hyderabad
+wl000187,CARD,5580119509271159,medium,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:11:00,Fraud Team,AML,India,Delhi
+wl000188,CARD,5146074555347057,medium,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:12:00,Customer Care,CRM,India,Delhi
+wl000189,CARD,5711964215226557,high,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:18:00,Customer Care,CRM,India,Chennai
+wl000190,CARD,4739389920457356,critical,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:19:00,SOC,AML,India,Pune
+wl000191,CARD,4421140868250958,critical,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:21:00,Customer Care,External Feed,India,Delhi
+wl000192,CARD,5770348247710930,high,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:22:00,Fraud Team,AML,India,Chennai
+wl000193,CARD,5808806220722393,high,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:27:00,AML Team,Manual,India,Chennai
+wl000194,CARD,4940655782019049,high,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:33:00,Fraud Team,CRM,India,Chennai
+wl000195,CARD,5076502412095797,low,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:34:00,SOC,External Feed,India,Delhi
+wl000196,CARD,5604765801856942,low,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:35:00,AML Team,Manual,India,Delhi
+wl000197,CARD,4606940960035622,high,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:37:00,AML Team,Manual,India,Hyderabad
+wl000198,CARD,5972154064176922,critical,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:40:00,Fraud Team,AML,India,Hyderabad
+wl000199,CARD,4206980420439406,high,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:41:00,AML Team,CRM,India,Chennai
+wl000200,CARD,5905072368876769,medium,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:42:00,Customer Care,Manual,India,Bengaluru
+wl000201,CARD,5577848728299790,critical,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:43:00,Fraud Team,CRM,India,Hyderabad
+wl000202,CARD,4367746202582541,critical,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:45:00,SOC,CRM,India,Hyderabad
+wl000203,CARD,5619237245018482,high,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:46:00,Customer Care,External Feed,India,Hyderabad
+wl000204,CARD,5250583334303115,critical,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:48:00,SOC,AML,India,Mumbai
+wl000205,CARD,4589714802632572,medium,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:50:00,Customer Care,Manual,India,Pune
+wl000206,CARD,5463122417974970,critical,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:52:00,SOC,CRM,India,Hyderabad
+wl000207,CARD,4030569067447168,low,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:54:00,AML Team,Manual,India,Delhi
+wl000208,CARD,4357438421503173,high,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:56:00,Customer Care,AML,India,Delhi
+wl000209,CARD,4592342683441492,medium,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 18:58:00,Customer Care,External Feed,India,Mumbai
+wl000210,CARD,4017750954654081,medium,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 19:01:00,Fraud Team,CRM,India,Mumbai
+wl000211,CARD,4645257775478124,high,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 19:08:00,SOC,Manual,India,Hyderabad
+wl000212,CARD,5630900159446337,critical,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 19:12:00,SOC,Manual,India,Mumbai
+wl000213,CARD,5123920491060180,critical,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 19:13:00,Fraud Team,Manual,India,Delhi
+wl000214,CARD,5189705916118634,critical,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 19:14:00,Customer Care,External Feed,India,Pune
+wl000215,CARD,5091508632181226,critical,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 19:17:00,Customer Care,AML,India,Delhi
+wl000216,CARD,5611594082154548,high,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 19:21:00,AML Team,CRM,India,Bengaluru
+wl000217,CARD,5452354268744709,medium,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 19:22:00,Fraud Team,Manual,India,Bengaluru
+wl000218,CARD,5403339977180512,medium,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 19:25:00,SOC,CRM,India,Pune
+wl000219,CARD,5698416612374077,critical,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 19:26:00,Fraud Team,External Feed,India,Mumbai
+wl000220,CARD,5766270511579421,medium,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 19:27:00,Customer Care,External Feed,India,Mumbai
+wl000221,CARD,5919623419964330,high,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 19:28:00,Customer Care,External Feed,India,Pune
+wl000222,CARD,5905072368876769,critical,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 19:29:00,SOC,External Feed,India,Mumbai
+wl000223,CARD,4355610399529709,high,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 19:31:00,SOC,CRM,India,Pune
+wl000224,CARD,5701765636004126,medium,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 19:42:00,Fraud Team,External Feed,India,Delhi
+wl000225,CARD,4023741678725688,medium,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 19:49:00,AML Team,AML,India,Pune
+wl000226,CARD,4581467179576025,high,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 19:50:00,Customer Care,CRM,India,Delhi
+wl000227,CARD,4448838425364629,medium,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 19:53:00,Fraud Team,CRM,India,Delhi
+wl000228,CARD,4528669296627826,high,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 19:54:00,Fraud Team,AML,India,Bengaluru
+wl000229,CARD,4025176298334776,medium,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 19:56:00,AML Team,CRM,India,Hyderabad
+wl000230,CARD,4016481880442877,high,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 19:57:00,Fraud Team,External Feed,India,Pune
+wl000231,CARD,5311703037637152,high,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 20:01:00,Fraud Team,Manual,India,Pune
+wl000232,CARD,5915668633414112,low,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 20:04:00,Fraud Team,Manual,India,Delhi
+wl000233,CARD,4082723184322254,medium,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 20:11:00,Customer Care,AML,India,Pune
+wl000234,CARD,5487401640052429,high,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 20:13:00,AML Team,Manual,India,Delhi
+wl000235,CARD,4137230817214365,critical,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 20:20:00,Fraud Team,Manual,India,Pune
+wl000236,CARD,5317520716781126,low,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 20:25:00,SOC,CRM,India,Bengaluru
+wl000237,CARD,4354940128974323,high,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 20:32:00,Fraud Team,CRM,India,Bengaluru
+wl000238,CARD,5443270185106798,high,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 20:34:00,Fraud Team,External Feed,India,Delhi
+wl000239,CARD,4956046618398264,high,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 20:41:00,Fraud Team,External Feed,India,Delhi
+wl000240,CARD,4800230091561822,high,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 20:44:00,AML Team,AML,India,Pune
+wl000241,CARD,5561844421829986,critical,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 20:53:00,Fraud Team,AML,India,Hyderabad
+wl000242,CARD,4962712863917410,high,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 20:56:00,SOC,External Feed,India,Pune
+wl000243,CARD,4419049663193147,high,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 20:57:00,Customer Care,CRM,India,Delhi
+wl000244,CARD,4184254768182682,critical,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 20:59:00,Customer Care,Manual,India,Delhi
+wl000245,CARD,5010651333872621,high,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:03:00,Customer Care,External Feed,India,Pune
+wl000246,CARD,4721753540838660,high,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:05:00,SOC,CRM,India,Mumbai
+wl000247,CARD,4269312163761826,high,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:08:00,SOC,AML,India,Hyderabad
+wl000248,CARD,5324826292518811,high,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:09:00,Fraud Team,AML,India,Hyderabad
+wl000249,CARD,4856728727601539,critical,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:11:00,SOC,CRM,India,Chennai
+wl000250,CARD,4988942565290601,medium,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:14:00,SOC,Manual,India,Chennai
+wl000251,CARD,5962440630624479,low,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:17:00,AML Team,External Feed,India,Pune
+wl000252,CARD,5641605297516139,medium,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:19:00,Customer Care,External Feed,India,Bengaluru
+wl000253,CARD,4284993908926135,low,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:22:00,SOC,External Feed,India,Bengaluru
+wl000254,CARD,5953506373118040,medium,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:30:00,Customer Care,External Feed,India,Delhi
+wl000255,CARD,5759876220234134,high,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:32:00,SOC,CRM,India,Hyderabad
+wl000256,CARD,5111615280988519,high,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:33:00,AML Team,Manual,India,Bengaluru
+wl000257,CARD,4148652816850549,high,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:34:00,SOC,CRM,India,Bengaluru
+wl000258,CARD,4016481880442877,high,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:37:00,SOC,AML,India,Pune
+wl000259,CARD,5311703037637152,critical,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:40:00,Fraud Team,Manual,India,Hyderabad
+wl000260,CARD,5973711222990773,high,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:42:00,AML Team,Manual,India,Bengaluru
+wl000261,CARD,4637780529240759,critical,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:46:00,Customer Care,Manual,India,Hyderabad
+wl000262,CARD,4452455574696609,high,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:49:00,Customer Care,External Feed,India,Hyderabad
+wl000263,CARD,4391149830748204,medium,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:51:00,Customer Care,AML,India,Hyderabad
+wl000264,CARD,5004010414596428,critical,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:52:00,Fraud Team,CRM,India,Pune
+wl000265,CARD,4882603359101578,medium,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:55:00,SOC,Manual,India,Bengaluru
+wl000266,CARD,5223955905992936,medium,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:56:00,SOC,External Feed,India,Mumbai
+wl000267,CARD,4304166241118608,high,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:58:00,Customer Care,AML,India,Delhi
+wl000268,CARD,4882603359101578,critical,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 21:59:00,AML Team,Manual,India,Hyderabad
+wl000269,CARD,5827567043103850,medium,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:00:00,Customer Care,Manual,India,Pune
+wl000270,CARD,5177318063254312,medium,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:02:00,Fraud Team,External Feed,India,Chennai
+wl000271,CARD,4574817006661554,medium,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:03:00,Customer Care,AML,India,Chennai
+wl000272,CARD,5227837693898331,low,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:08:00,AML Team,CRM,India,Chennai
+wl000273,CARD,4327021648712067,high,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:12:00,SOC,AML,India,Chennai
+wl000274,CARD,4357438421503173,high,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:15:00,Customer Care,CRM,India,Chennai
+wl000275,CARD,4775677722660256,critical,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:19:00,Fraud Team,External Feed,India,Mumbai
+wl000276,CARD,4715534820128404,low,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:22:00,AML Team,Manual,India,Delhi
+wl000277,CARD,5738302843959955,low,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:27:00,AML Team,Manual,India,Hyderabad
+wl000278,CARD,5296577242954319,critical,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:32:00,Fraud Team,Manual,India,Chennai
+wl000279,CARD,5821374556114042,high,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:33:00,AML Team,AML,India,Pune
+wl000280,CARD,4106987205061492,critical,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:35:00,Customer Care,AML,India,Hyderabad
+wl000281,CARD,5303627924632030,critical,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:39:00,SOC,CRM,India,Mumbai
+wl000282,CARD,4927589551687403,medium,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:41:00,Fraud Team,Manual,India,Chennai
+wl000283,CARD,4359966057798068,critical,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:49:00,Fraud Team,AML,India,Chennai
+wl000284,CARD,4484002730086964,critical,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:50:00,AML Team,Manual,India,Hyderabad
+wl000285,CARD,4825071461125451,high,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:52:00,AML Team,Manual,India,Pune
+wl000286,CARD,4524013223423212,high,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:53:00,Fraud Team,Manual,India,Delhi
+wl000287,CARD,4016934292913208,medium,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:55:00,Fraud Team,AML,India,Hyderabad
+wl000288,CARD,5901495427707070,high,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:56:00,SOC,CRM,India,Pune
+wl000289,CARD,5696325953278771,critical,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:57:00,Fraud Team,AML,India,Chennai
+wl000290,CARD,5691128981231796,high,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:58:00,Customer Care,AML,India,Bengaluru
+wl000291,CARD,4136497189241954,critical,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 22:59:00,Customer Care,AML,India,Mumbai
+wl000292,CARD,4174268414593324,medium,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 23:05:00,SOC,CRM,India,Mumbai
+wl000293,CARD,5817946954899528,medium,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 23:06:00,Customer Care,CRM,India,Mumbai
+wl000294,CARD,5643039429045880,critical,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 23:10:00,Customer Care,CRM,India,Bengaluru
+wl000295,CARD,4045069176799351,medium,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 23:11:00,Fraud Team,AML,India,Mumbai
+wl000296,CARD,5000001529113710,low,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 23:20:00,AML Team,External Feed,India,Chennai
+wl000297,CARD,5034910740650043,critical,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 23:22:00,Fraud Team,Manual,India,Hyderabad
+wl000298,CARD,5990707550476814,high,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 23:28:00,AML Team,Manual,India,Pune
+wl000299,CARD,5276153966958322,critical,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 23:33:00,AML Team,External Feed,India,Delhi
+wl000300,CARD,5812147853907897,critical,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 23:34:00,Fraud Team,CRM,India,Pune
+wl000301,CARD,5676720957992707,critical,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 23:38:00,Fraud Team,Manual,India,Mumbai
+wl000302,CARD,5307240787541814,high,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 23:41:00,SOC,CRM,India,Mumbai
+wl000303,CARD,5947174648877192,medium,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 23:45:00,SOC,CRM,India,Pune
+wl000304,CARD,5521117908075950,critical,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 23:48:00,SOC,AML,India,Chennai
+wl000305,CARD,4827718129826656,high,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 23:49:00,SOC,Manual,India,Delhi
+wl000306,CARD,4809242875721582,critical,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 23:50:00,Fraud Team,CRM,India,Chennai
+wl000307,CARD,4891775662056341,medium,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,18-Jun-2026 23:52:00,Fraud Team,AML,India,Hyderabad
+wl000308,CARD,5812147853907897,medium,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 00:03:00,Customer Care,External Feed,India,Delhi
+wl000309,CARD,5308761238595142,critical,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 00:05:00,Fraud Team,CRM,India,Hyderabad
+wl000310,CARD,4785969691557923,medium,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 00:08:00,Customer Care,CRM,India,Chennai
+wl000311,CARD,4415131528547810,high,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 00:10:00,Fraud Team,External Feed,India,Pune
+wl000312,CARD,5117536170617131,critical,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 00:15:00,Customer Care,CRM,India,Chennai
+wl000313,CARD,5415298217392958,low,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 00:21:00,Customer Care,CRM,India,Chennai
+wl000314,CARD,4174268414593324,critical,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 00:22:00,SOC,Manual,India,Pune
+wl000315,CARD,4748453986289503,high,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 00:23:00,AML Team,CRM,India,Pune
+wl000316,CARD,5508276817225778,critical,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 00:26:00,AML Team,Manual,India,Delhi
+wl000317,CARD,5728975267722335,high,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 00:27:00,SOC,External Feed,India,Pune
+wl000318,CARD,4468750635190368,medium,ADD,ACCOUNT_TAKEOVER,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 00:28:00,Customer Care,AML,India,Hyderabad
+wl000319,CARD,4927589551687403,medium,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 00:29:00,Fraud Team,Manual,India,Hyderabad
+wl000320,CARD,5042271133228898,medium,ADD,MONEY_LAUNDERING,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 00:30:00,SOC,External Feed,India,Chennai
+wl000321,CARD,4546027341514889,low,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 00:31:00,Customer Care,Manual,India,Bengaluru
+wl000322,CARD,5491357759492993,critical,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 00:39:00,Customer Care,External Feed,India,Mumbai
+wl000323,CARD,5524914168601347,high,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 00:48:00,Fraud Team,External Feed,India,Bengaluru
+wl000324,CARD,5289731791286857,medium,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 00:53:00,Customer Care,CRM,India,Pune
+wl000325,CARD,5078263337389876,medium,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 00:54:00,SOC,AML,India,Chennai
+wl000326,CARD,5281793406527755,medium,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 01:03:00,Fraud Team,Manual,India,Chennai
+wl000327,CARD,4629269335895131,medium,ADD,BLACKLISTED_MERCHANT,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 01:05:00,Fraud Team,AML,India,Pune
+wl000328,CARD,5877347784858803,high,ADD,SUSPICIOUS_ACTIVITY,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 01:07:00,Fraud Team,CRM,India,Bengaluru
+wl000329,CARD,5832582386870070,high,ADD,LOST_CARD,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 01:08:00,SOC,Manual,India,Hyderabad
+wl000330,CARD,4707986617706734,critical,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 01:09:00,Fraud Team,Manual,India,Chennai
+wl000331,CARD,5627365271727227,high,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 01:10:00,SOC,CRM,India,Delhi
+wl000332,CARD,4341678127782215,critical,ADD,TEST_TRANSACTION,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 01:11:00,Customer Care,External Feed,India,Pune
+wl000333,CARD,5407581814124781,critical,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 01:13:00,AML Team,AML,India,Chennai
+wl000334,CARD,5564240082547801,critical,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 01:15:00,AML Team,CRM,India,Pune
+wl000335,CARD,5250583334303115,critical,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 01:17:00,Fraud Team,CRM,India,Mumbai
+wl000336,CARD,4811390438303411,medium,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 01:21:00,AML Team,CRM,India,Pune
+wl000337,CARD,4941559450119298,high,ADD,COMPROMISED_DEVICE,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 01:22:00,SOC,External Feed,India,Mumbai
+wl000338,CARD,4108907140140113,medium,ADD,PHISHING,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 01:25:00,Fraud Team,AML,India,Mumbai
+wl000339,CARD,4562137213865898,medium,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 01:27:00,Customer Care,AML,India,Mumbai
+wl000340,CARD,4766608112600309,medium,ADD,VELOCITY_FRAUD,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 01:35:00,Customer Care,CRM,India,Delhi
+wl000341,CARD,4073033793375635,medium,ADD,STOLEN_CARD,Auto-generated fraud watchlist entry,ACTIVE,19-Jun-2026 01:39:00,SOC,CRM,India,Hyderabad
